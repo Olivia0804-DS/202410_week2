@@ -13,7 +13,8 @@ PYTHON_CONCEPTS = {
     "list": "Lists are ordered collections in Python. Example: my_list = [1, 2, 3]. You can append, remove, and modify elements.",
     "dictionary": "Dictionaries store key-value pairs. Example: my_dict = {'name': 'John', 'age': 25}",
     "function": "Functions are defined using 'def'. Example: def greet(name): return f'Hello {name}!'",
-    "class": "Classes are blueprints for objects. Example: class Dog: def bark(self): return 'Woof!'"
+    "class": "Classes are blueprints for objects. Example: class Dog: def bark(self): return 'Woof!'",
+    "tuple":"A tuple is a collection similar to a Python list. The primary difference is that we cannot modify a tuple once it is created.We create a tuple by placing items inside parentheses (). For example,my_tuple = (1, 2, 3)"
 }
 
 @app.route('/')

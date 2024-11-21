@@ -21,7 +21,7 @@ if 'messages' not in st.session_state:
 def send_message(message):
     """发送消息并获取响应"""
     try:
-        response = requests.get(f"http://localhost:5000/chat", params={"message": message})
+        response = requests.get(f"http://backend:5000/chat", params={"message": message})
         if response.status_code == 200:
             return response.json()
         return None
@@ -44,7 +44,7 @@ def main():
                 st.success(f"Assistant: {message['text']}")
         
         # 用户输入区域
-        input_col, space, button_col = st.columns([8,1,1])
+        input_col, space, button_col = st.columns([7,1,2])
         
         with input_col:
             user_input = st.text_input("Ask something:")

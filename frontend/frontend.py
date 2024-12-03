@@ -14,9 +14,9 @@ if 'messages' not in st.session_state:
 
 # 角色描述
 ROLE_DESCRIPTIONS = {
-    "Customer Support Specialist": "客户支持专家",
-    "Technical Assistant": "技术助理",
-    "Service Advisor": "客户服务顾问"
+    "Customer Support Specialist": "Customer Support Specialist",
+    "Technical Assistant": "Technical Assistant",
+    "Service Advisor": "Service Advisor"
 }
 
 def send_message(message, role):
